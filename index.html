@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meter Work Request – Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top">
+  <a class="logo" href="?" aria-label="Start again">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#f050f8"/><circle cx="14" cy="17" r="4" fill="#fff"/><circle cx="26" cy="17" r="4" fill="#fff"/><circle cx="14.6" cy="17.6" r="2" fill="#100030"/><circle cx="26.6" cy="17.6" r="2" fill="#100030"/><path d="M15 26q5 4 10 0" stroke="#100030" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+    octopus energy
+  </a>
+  <span class="demo-pill">Demo – nothing is booked</span>
+</div>
+<div class="progress" id="progress"></div>
+<main id="app"><div class="spinner"></div></main>
+
+<button class="demo-btn" id="demoBtn">Demo tools</button>
+<aside class="demo" id="demo" aria-label="Demo tools">
+  <header><strong>Demo tools</strong><button class="linkbtn" id="demoClose">Close</button></header>
+  <div class="tabs">
+    <button data-tab="kraken" class="on">What Kraken would do</button>
+    <button data-tab="data">Test data</button>
+    <button data-tab="settings">Settings</button>
+  </div>
+  <div class="body" id="demoBody"></div>
+</aside>
+
+<script src="js/core.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
